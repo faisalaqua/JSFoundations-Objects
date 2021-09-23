@@ -15,8 +15,8 @@ const channels = require("./channels.json");
  ****************************************************************/
 function getChannelName(channel) {
   // Your code here
+  return channel.name;
 }
-
 // console.log(getChannelName(channels[0]));
 
 /**************************************************************
@@ -26,8 +26,9 @@ function getChannelName(channel) {
  ****************************************************************/
 function numberOfVideos(channel) {
   // Your code here
+  return channel.videos.length;
 }
-// console.log(numberOfVideos(channels[0]))
+console.log(numberOfVideos(channels[0]));
 
 /**************************************************************
  * channelHasVideo(videoTitle, channel):
